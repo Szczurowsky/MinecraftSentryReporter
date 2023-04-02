@@ -1,4 +1,4 @@
-package pl.szczurowsky.minecraftsentryreporter.spigot.command;
+package pl.szczurowsky.minecraftsentryreporter.bungee.command;
 
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.command.Command;
