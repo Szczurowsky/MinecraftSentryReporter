@@ -19,7 +19,7 @@
 ## Configuration
 Config is simple and have just 3 options:
 * `dsn` - Sentry DSN string
-* `debug` - Enable production mode (reports all exceptions to sentry.io when production mode is enabled)
+* `production` - Enable production mode (reports all exceptions to sentry.io when production mode is enabled)
 * `server-name` - Name of the server (used in sentry.io)
 
 Example config:
