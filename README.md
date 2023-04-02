@@ -8,7 +8,7 @@
 ## Supported platforms
 * Velocity
 * BungeeCord
-* Paper and it's forks
+* Spigot and it's forks
 
 ## Installation
 * Download the latest release from the [releases tab](https://github.com/Szczurowsky/MinecraftSentryReporter/releases) for your platform.
