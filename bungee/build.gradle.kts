@@ -28,7 +28,7 @@ bungee {
 
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
     dependsOn("test")
-    archiveFileName.set("MinecraftSentryReporter-Bungee v{${project.version}}.jar")
+    archiveFileName.set("MinecraftSentryReporter-Bungee v${project.version}.jar")
 
     exclude("org/intellij/lang/annotations/**")
     exclude("org/jetbrains/annotations/**")
