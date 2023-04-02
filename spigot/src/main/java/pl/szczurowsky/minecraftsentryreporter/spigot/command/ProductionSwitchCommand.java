@@ -1,6 +1,5 @@
-package pl.szczurowsky.minecraftsentryreporter.bungee.command;
+package pl.szczurowsky.minecraftsentryreporter.spigot.command;
 
-import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -22,18 +21,21 @@ public class ProductionSwitchCommand implements CommandExecutor {
             if (args.length == 1) {
                 if (args[0].equalsIgnoreCase("true")) {
                     configurationManager.getSentryConfig().setProduction(true);
-                    sender.sendMessage(LegacyComponentSerializer.legacyAmpersand().deserialize("&aProduction mode enabled!"));
+                    sender.sendMessage(translateColorCodes("&aProduction mode enabled!"));
                 } else if (args[0].equalsIgnoreCase("false")) {
                     configurationManager.getSentryConfig().setProduction(false);
-                    sender.sendMessage(LegacyComponentSerializer.legacyAmpersand().deserialize("&aProduction mode disabled!"));
+                    sender.sendMessage(translateColorCodes("&aProduction mode disabled!"));
                 }
                 configurationManager.getSentryConfig().save();
-                return true;
             }
-            sender.sendMessage(LegacyComponentSerializer.legacyAmpersand().deserialize("&cUsage: /msrproduction <true|false>"));
-            return true;
+            sender.sendMessage(translateColorCodes("&cUsage: /msrproduction <true|false>"));
         }
-        sender.sendMessage(LegacyComponentSerializer.legacyAmpersand().deserialize("&cYou don't have permission to use this command!"));
+        sender.sendMessage(translateColorCodes("&cYou don't have permission to use this command!"));
         return true;
     }
+
+    private static String translateColorCodes(String message) {
+        return message.replace("&", "§");
+    }
+
 }
