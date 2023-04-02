@@ -8,7 +8,7 @@ val longVersion: String by rootProject.extra
 
 dependencies {
     implementation(project(":common"))
-    compileOnly("io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT")
 
     compileOnly("org.jetbrains:annotations:20.1.0")
 
