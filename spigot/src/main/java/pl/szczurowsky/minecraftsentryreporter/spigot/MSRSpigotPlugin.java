@@ -1,4 +1,4 @@
-package pl.szczurowsky.minecraftsentryreporter.bungee;
+package pl.szczurowsky.minecraftsentryreporter.spigot;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
@@ -7,7 +7,7 @@ import pl.szczurowsky.minecraftsentryreporter.common.MSRPlugin;
 import pl.szczurowsky.minecraftsentryreporter.common.config.ConfigurationManager;
 import pl.szczurowsky.minecraftsentryreporter.common.logging.SentryLogHandler;
 import pl.szczurowsky.minecraftsentryreporter.common.sentry.SentryInitializer;
-import pl.szczurowsky.minecraftsentryreporter.bungee.command.ProductionSwitchCommand;
+import pl.szczurowsky.minecraftsentryreporter.spigot.command.ProductionSwitchCommand;
 
 import java.util.SortedMap;
 import java.util.TreeMap;

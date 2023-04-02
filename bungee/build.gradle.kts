@@ -20,7 +20,7 @@ tasks.getByName<Test>("test") {
 }
 
 bungee {
-    main = "com.mcmanhunt.event.proxy.ProxyPlugin"
+    main = "pl.szczurowsky.minecraftsentryreporter.bungee.MSRBungeePlugin"
     name = "MinecraftSentryReporter"
     author = "Szczurowsky"
     version = longVersion
