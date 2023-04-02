@@ -21,7 +21,7 @@ public class ConfigurationManager {
 
     public void loadConfigurations() {
         ConfigFactory configFactory = new ConfigFactory(configDirectory, HjsonConfigurer::new);
-        this.sentryConfig = configFactory.produceConfig(SentryConfig.class, "sentry.json");
+        this.sentryConfig = configFactory.produceConfig(SentryConfig.class, "sentry.hjson");
     }
 
     public SentryConfig getSentryConfig() {
