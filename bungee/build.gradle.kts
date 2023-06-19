@@ -1,7 +1,7 @@
 plugins {
     id("java")
     id("com.github.johnrengelman.shadow") version "8.1.1"
-    id("net.minecrell.plugin-yml.bungee") version "0.5.3"
+    id("net.minecrell.plugin-yml.bungee") version "0.6.0"
 }
 
 val longVersion: String by rootProject.extra
